@@ -30,6 +30,7 @@ export class Server {
 
     //*Routes
     this.app.use(this.routes);
+
     //* SPA
     this.app.get("*", (req, res) => {
       const indexPath = path.join(
